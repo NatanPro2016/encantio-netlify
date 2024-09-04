@@ -6,3 +6,12 @@ wrappers.forEach((wrapper) => {
     wrapper.appendChild(row);
   }
 });
+
+const accordions = document.querySelectorAll(".accordion");
+const panel = document.querySelectorAll(".panel");
+accordions.forEach((accordion, index) => {
+  accordion.addEventListener("click", () => {
+    accordion.classList.toggle("active");
+    panel[index].classList.toggle("active");
+  });
+});

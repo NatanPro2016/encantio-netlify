@@ -12,7 +12,7 @@
 :root {
   --dark-background: #090a18;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -55,6 +55,9 @@ nav .btn {
   text-decoration: none;
   background: #ffffff2f;
 }
+.header-big {
+  font-size: 2.563rem;
+}
 .hero {
   background-color: var(--dark-background);
   color: #fff;
@@ -88,6 +91,7 @@ nav .btn {
     text-align: center;
     position: relative;
     z-index: 1;
+    padding: 2rem;
 
     .spots {
       border: 1px solid #38b7ff;
@@ -117,9 +121,9 @@ nav .btn {
       }
     }
     .h1 {
-      font-size: 58.7px;
+      font-size: 3.669;
       font-weight: 500;
-      font-size: 72px;
+      font-size: 4.6rem;
 
       .gradient {
         background: -webkit-linear-gradient(45deg, #38b7ff, #d782ff);
@@ -148,6 +152,7 @@ nav .btn {
   }
   .stars {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     padding: 2rem;
     color: #ffffffb4;
@@ -157,7 +162,7 @@ nav .btn {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    overflow-y: scroll;
+    overflow: hidden;
     margin-top: 4rem;
   }
   ::-webkit-scrollbar {
@@ -197,13 +202,14 @@ nav .btn {
   .features {
     display: flex;
     justify-content: center;
-    width: 1200px;
+    width: 100%;
+    max-width: 75rem;
     gap: 4rem;
     margin: 2rem;
     margin-bottom: 6rem;
   }
   .features div {
-    width: 21rem;
+    max-width: 21rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,23 +225,23 @@ nav .btn {
       align-items: center;
     }
     .mini-header {
-      font-size: 26.1px;
+      font-size: 1.631rem;
       font-weight: 500;
     }
     .paragraph {
-      font-size: 17px;
+      font-size: 1.06rem;
       color: #51535d;
     }
   }
   .muted {
     margin-top: 3rem;
-    font-size: 16px;
+    font-size: 1rem;
     color: #81808b;
   }
   .header {
-    font-size: 50.5px;
+    font-size: 3.1rem;
     font-weight: 500;
-    margin: 2rem;
+    margin: 1.4rem;
   }
   .btns {
     display: flex;
@@ -258,15 +264,16 @@ nav .btn {
     display: grid;
     grid-template-columns: 24rem 24rem 24rem;
     margin-top: 4rem;
-    gap: 4rem;
+    gap: 2rem;
+    row-gap: 3.5rem;
     align-content: center;
 
     .mini-header {
-      font-size: 26.1px;
+      font-size: 1.6rem;
       font-weight: 500;
     }
     .paragraph {
-      font-size: 17px;
+      font-size: 1.06rem;
       color: #51535d;
     }
     .circle {
@@ -325,7 +332,7 @@ nav .btn {
 
     .muted {
       margin: 0;
-      font-size: 16px;
+      font-size: 1rem;
       color: #81808b;
     }
   }
@@ -374,7 +381,7 @@ nav .btn {
     z-index: 2;
   }
   .h1 {
-    font-size: 50.2px;
+    font-size: 3.1rem;
     font-weight: 500;
     margin: 2rem;
     margin-top: 2rem;
@@ -388,14 +395,16 @@ nav .btn {
     gap: 3rem;
 
     .package {
-      width: 21.6rem;
+      max-width: 21.6rem;
+      width: 100%;
       background-image: linear-gradient(145deg, #ffffffde 10%, #ffffff27 20%);
       padding: 0.2rem;
       border-radius: 0.6rem;
       padding-bottom: 2rem;
 
       .background {
-        width: 20rem;
+        max-width: 20rem;
+        width: 90%;
         border-radius: 0.4rem;
         padding: 1.4rem;
         background-color: #171826;
@@ -403,13 +412,13 @@ nav .btn {
         padding-top: 2.5rem;
 
         .mini-header {
-          font-size: 26.1px;
+          font-size: 1.8rem;
           font-weight: 500;
           text-transform: capitalize;
         }
 
         .paragraph {
-          font-size: 14.2px;
+          font-size: 0.8rem;
           color: #ffffff91;
           margin-top: 1.5rem;
         }
@@ -420,7 +429,7 @@ nav .btn {
           color: var(--dark-background);
           background: #fff;
           border-radius: 0.4rem;
-          font-size: 18px;
+          font-size: 1.12rem;
         }
         .blue-text {
           color: #38b7ff;
@@ -467,7 +476,7 @@ nav .btn {
           padding: 0.5rem 1rem;
           border-radius: 0 0 0 0.4rem;
           background: #38b7ff;
-          font-size: 9.8px;
+          font-size: 0.61rem;
           font-weight: 700;
         }
         .limited {
@@ -475,7 +484,6 @@ nav .btn {
           padding: 0.1rem 1rem;
           border-radius: 0.4rem;
           margin-top: 20rem;
-          margin-left: 1.5rem;
         }
         .line {
           margin: 3rem auto;
@@ -487,14 +495,14 @@ nav .btn {
       flex-direction: column;
       gap: 3rem;
       .mini-header {
-        font-size: 26.1px;
+        font-size: 1.6rem;
         font-weight: 500;
         text-transform: capitalize;
       }
 
       .paragraph {
         margin-top: 1rem;
-        font-size: 14.2px;
+        font-size: 0.87rem;
         color: rgba(255, 255, 255, 0.603);
       }
       .project {
@@ -538,7 +546,7 @@ nav .btn {
             color: var(--dark-background);
             background: #fff;
             border-radius: 0.4rem;
-            font-size: 18px;
+            font-size: 1.12rem;
             text-decoration: none;
           }
         }
@@ -594,7 +602,7 @@ nav .btn {
       justify-content: center;
       gap: 1rem;
       .h1 {
-        font-size: 26.1px;
+        font-size: 1.6rem;
         font-weight: 500;
         margin: 0.8rem;
       }
@@ -607,13 +615,15 @@ nav .btn {
   }
   .stripe {
     display: flex;
+    align-items: center;
     margin: 4rem;
     gap: 2rem;
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #b5b5ba;
   }
   .secure {
-    width: 71rem;
+    width: 100%;
+    max-width: 71rem;
     margin-top: 1.7rem;
     border-radius: 1.2rem;
     padding: 0.2rem;
@@ -629,13 +639,13 @@ nav .btn {
       background: #171826;
 
       .h1 {
-        width: 47rem;
+        max-width: 47rem;
         font-size: 50.2px;
         font-weight: 500;
         margin: 0.8rem;
       }
       .paragraph {
-        width: 44rem;
+        max-width: 44rem;
         font-size: 17px;
         color: #b5b5ba;
       }
@@ -661,7 +671,58 @@ nav .btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1.5rem;
     padding-top: 10rem;
+    .faqs li {
+      cursor: pointer;
+      .question {
+        width: 100%;
+        transition: all 0.2s linear;
+      }
+
+      .panel {
+        padding-bottom: 20px;
+        transform: scaley(0);
+        transition: all 0.1s linear;
+        transform-origin: top;
+        height: fit-content;
+        height: 0;
+        padding-top: 20px;
+        font-size: 19px;
+      }
+      .panel p {
+        color: #1602217e;
+      }
+      .panel.active {
+        transform-origin: top;
+        transform: scaley(1);
+        transition: all 0.1s linear;
+        height: fit-content;
+      }
+    }
+    .faqs button {
+      border: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      max-width: 695px;
+      color: #160221;
+      background: transparent;
+      font-size: 1rem;
+      gap: 4rem;
+    }
+    .faqs button p {
+      font-size: 26.1px;
+    }
+    .faqs button img {
+      transition: rotate 0.1s linear;
+    }
+    .faqs button.active img {
+      transition: rotate 0.1s linear;
+      rotate: 180deg;
+    }
     .samll {
       font-size: 15.9px;
       color: #81808b;
@@ -674,11 +735,13 @@ nav .btn {
     }
     .cards {
       display: flex;
-      width: 71rem;
+      width: 100%;
+      max-width: 71rem;
       gap: 3rem;
       margin: 4rem;
     }
     .card {
+      min-height: 340px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -694,7 +757,8 @@ nav .btn {
       }
     }
     .badges {
-      width: 70rem;
+      width: 100%;
+      max-width: 70rem;
       text-align: center;
       margin-top: 4rem;
 
@@ -714,14 +778,16 @@ nav .btn {
       margin-top: 3rem;
     }
     .faqs li {
-      width: 56rem;
+      width: 100%;
+      max-width: 56rem;
       display: flex;
       justify-content: space-between;
       font-size: 26.1px;
       align-items: center;
-      gap: 2rem;
+
       position: relative;
       margin-bottom: 4rem;
+      cursor: pointer;
       &::after {
         content: "";
         background: linear-gradient(90deg, #38b7ff, #d782ff);
@@ -732,14 +798,17 @@ nav .btn {
       }
     }
     .faqs li p {
-      width: 695px;
+      max-width: 695px;
       color: #160221;
+      text-align: start;
     }
     .book-a-call {
-      height: 26.25rem;
-      width: 71rem;
+      min-height: 26.25rem;
+      width: 100%;
+      max-width: 71.063rem;
       background: radial-gradient(#0b1d32, #090a18);
       border-radius: 0.8rem;
+      margin: 1.5rem;
       margin-top: 6em;
       margin-bottom: 4rem;
 
@@ -778,12 +847,29 @@ nav .btn {
   padding: 4rem;
   background: #090a18;
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(#d782ff, transparent);
+    height: 18rem;
+    width: 18rem;
+    border-radius: 999px;
+    filter: blur(6rem);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50%;
+  }
   .content {
-    width: 71.063rem;
+    max-width: 71.063rem;
+    width: 100vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    position: relative;
+    z-index: 2;
     .flex {
       display: flex;
       justify-content: space-between;
@@ -823,6 +909,319 @@ nav .btn {
       .links a {
         color: #fff;
         text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  h1 {
+    text-align: center;
+  }
+  nav {
+    width: 14.094rem;
+    height: 4.563rem;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul,
+  nav .btn {
+    display: none;
+  }
+  .hero {
+    padding-top: 3.4rem;
+    .content {
+      .h1 {
+        font-size: 41px;
+      }
+      .btn {
+        margin-top: 1rem;
+      }
+      .our-work {
+        display: none;
+      }
+    }
+    .wrapper {
+      display: none;
+    }
+    .wallpapers {
+    }
+
+    .flex {
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+    }
+  }
+  .services {
+    padding: 0 1.5rem;
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+    .h1 {
+      margin: 2rem;
+    }
+
+    .web-design {
+      max-width: 100%;
+    }
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 2rem;
+      gap: 1rem;
+    }
+    .btns {
+      margin: 1rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      width: 100%;
+      .btn {
+        padding: 0.5rem 1rem;
+        min-width: fit-content;
+        width: 100%;
+        max-width: 160px;
+      }
+    }
+  }
+  .packages {
+    padding: 1rem;
+    .h1 {
+      text-align: center;
+      font-size: 34px;
+      margin: 1rem;
+    }
+    .package-list {
+      align-items: center;
+      flex-direction: column;
+    }
+    .Guarantee {
+      width: 100%;
+      text-align: center;
+      .gradint-bg {
+        height: unset;
+        padding: 1rem;
+      }
+    }
+  }
+  .vision {
+    align-items: center;
+    .bg {
+      .book-a-call {
+        .heading {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  .footer {
+    flex-direction: column;
+    .content {
+      flex-direction: column;
+      .flex {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .hero {
+    .trusted-by {
+      max-width: 100vw;
+    }
+    .flex img {
+      width: 100%;
+      max-width: 180px;
+    }
+  }
+  .services {
+    .grid {
+      grid-template-columns: 1fr;
+      margin-top: 1rem;
+      gap: 1.5rem;
+    }
+  }
+  .bg {
+    padding: 1rem;
+    .cards {
+      flex-direction: column;
+      width: unset;
+    }
+  }
+  .packages .package-list .package {
+    max-width: 85vw;
+    height: 100%;
+    padding-bottom: 0.2rem;
+
+    .background {
+      width: 100%;
+      text-align: start;
+      align-items: start;
+      .mini-header {
+        font-size: 26px;
+        text-align: start;
+      }
+      .paragraph {
+        font-size: 14px;
+        margin-top: 16px;
+      }
+      .btn {
+        padding: 19px;
+        width: 100%;
+        margin: 34px auto;
+      }
+    }
+  }
+  .packages {
+    .package-list {
+      .package-3 {
+        .project {
+          margin: auto;
+          max-width: 85vw;
+          background-image: linear-gradient(
+            145deg,
+            #ffffffde 10%,
+            #ffffff27 20%
+          );
+          padding: 0.2rem;
+          border-radius: 0.6rem;
+          padding-bottom: 0.22rem;
+
+          flex: 1;
+          .gradiant-bg {
+            height: 100%;
+            width: 100%;
+            border-radius: 0.4rem;
+            padding: 1.4rem;
+            background-color: #171826;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            margin: auto;
+            .mini-header {
+              text-align: start;
+              font-size: 26px;
+            }
+            .badgs {
+              display: none;
+            }
+
+            .line {
+              height: 1px;
+              width: 9rem;
+              background: #767780;
+              margin: 0.5rem 0;
+            }
+            .btn {
+              padding: 0.1rem;
+              border: 1px solid white;
+              width: 100%;
+              margin: 0.4rem auto;
+              border: none;
+              color: var(--forground);
+              background: transparent;
+              border-radius: 0.4rem;
+              font-size: 1.12rem;
+              text-decoration: none;
+            }
+          }
+        }
+        .add-on {
+          width: 85vw;
+          padding-bottom: 0.2rem;
+          .gradiant-bg {
+            width: 100%;
+            padding: 1.4rem 0.6rem;
+          }
+        }
+      }
+    }
+    .secure .gradiant-bg {
+      gap: 1.5rem;
+      .h1 {
+        font-size: 34px;
+      }
+      .paragraph {
+        font-size: 14px;
+      }
+    }
+  }
+  .package-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .mini-header {
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    .paragraph {
+      margin-top: 1rem;
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.603);
+    }
+
+    .add-on {
+      width: 21.6rem;
+      background-image: linear-gradient(145deg, #ffffffde 10%, #ffffff27 20%);
+      padding: 0.2rem;
+      border-radius: 0.6rem;
+      padding-bottom: 2rem;
+      flex: 1;
+      .gradiant-bg {
+        width: 20rem;
+        height: 100%;
+        border-radius: 0.4rem;
+        padding: 1.4rem;
+        background-color: #171826;
+        padding-top: 2rem;
+      }
+      .gradiant-bg span {
+        background: #ffffff28;
+        padding: 0.6rem 0.8rem;
+        color: #fff;
+        border-radius: 0.6rem;
+      }
+      .gradiant-bg ul {
+        list-style-image: url(../img/right.png);
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        gap: 0.6rem;
+      }
+    }
+  }
+  .vision {
+    .bg {
+      .heading {
+        font-size: 34px;
+      }
+      .badges {
+        .badge {
+          font-size: 15px;
+          padding: 10px 20px;
+        }
+      }
+      .faqs button {
+        gap: 1rem;
+      }
+      .faqs li p {
+        font-size: 21px;
+      }
+      .book-a-call {
+        padding: 29px;
+        .heading {
+          font-size: 35px;
+        }
+        .btn {
+          width: 100%;
+          padding: 10px;
+        }
       }
     }
   }
