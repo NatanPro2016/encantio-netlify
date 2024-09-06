@@ -451,7 +451,8 @@ nav .btn {
         }
         .line {
           height: 1px;
-          width: 9rem;
+          max-width: 9rem;
+          width: 100%;
           background: #767780;
           margin: 3rem 0;
         }
