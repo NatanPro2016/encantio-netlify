@@ -15,8 +15,10 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   max-width: 100svw;
+
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -58,11 +60,38 @@ nav .btn {
 .header-big {
   font-size: 2.563rem;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translatey(100px);
+  transition: all 1s ease-in-out;
+}
+.hidden.show {
+  opacity: 1;
+  transform: translatey(0px);
+}
+.scale-up {
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+}
+.scale-up.show {
+  transform: scale(1);
+}
+
+.delay-1 {
+  transition-delay: 0.5s;
+}
+.delay-2 {
+  transition-delay: 1s;
+}
+.delay-3 {
+  transition-delay: 1.5s;
+}
 .hero {
   background-color: var(--dark-background);
   color: #fff;
   width: 100%;
-  height: fit-content;
+  min-height: 1000px;
   padding-top: 8rem;
   position: relative;
   z-index: 2;
@@ -260,6 +289,18 @@ nav .btn {
       }
     }
   }
+  .img-wrapper {
+    height: 1000px;
+    width: 100%;
+    position: relative;
+  }
+  .img-wrapper img {
+    position: sticky;
+    top: 20vh;
+    /* transform: translateY(-50%); */
+    scale: 0.8;
+    transition: scale 0.2s linear;
+  }
   .grid {
     display: grid;
     grid-template-columns: 24rem 24rem 24rem;
@@ -294,13 +335,37 @@ nav .btn {
   }
   .testimonials {
     .flex {
+      width: 98svw;
+      max-width: 2000px;
       display: flex;
       flex-wrap: nowrap;
-      justify-content: center;
-      gap: 2rem;
-      width: 98svw;
-      overflow-x: hidden;
-      text-align: start;
+      overflow: hidden;
+      -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+      );
+      mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+      );
+      .scroller {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 2rem;
+        width: fit-content;
+        text-align: start;
+        animation: scroller 30s linear infinite;
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
 
       .testimonial {
         min-width: 28rem;
@@ -335,6 +400,11 @@ nav .btn {
       font-size: 1rem;
       color: #81808b;
     }
+  }
+}
+@keyframes scroller {
+  to {
+    transform: translateX(calc(1rem - 50% ));
   }
 }
 .packages {
@@ -740,6 +810,7 @@ nav .btn {
       max-width: 71rem;
       gap: 3rem;
       margin: 4rem;
+      flex-wrap: wrap;
     }
     .card {
       min-height: 340px;
@@ -748,6 +819,7 @@ nav .btn {
       align-items: center;
       gap: 2rem;
       text-align: center;
+      flex: 1;
       .mini {
         font-size: 26.1px;
         color: #090a18;

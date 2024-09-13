@@ -15,3 +15,25 @@ accordions.forEach((accordion, index) => {
     panel[index].classList.toggle("active");
   });
 });
+
+//creating scorll animation effect
+
+const hidden = document.querySelectorAll(".hidden");
+const scale_up = document.querySelectorAll(".scale-up");
+const observer = new IntersectionObserver(
+  (entrys) => {
+    entrys.forEach((entry) => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+      if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+  },
+  {
+    threshold: 0.6,
+  }
+);
+scale_up.forEach((card) => {
+  observer.observe(card);
+});
+hidden.forEach((card) => {
+  observer.observe(card);
+});
