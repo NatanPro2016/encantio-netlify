@@ -37,3 +37,15 @@ scale_up.forEach((card) => {
 hidden.forEach((card) => {
   observer.observe(card);
 });
+
+// mobile navgation
+const navButton = document.getElementById("side-nav-button");
+const container = document.getElementById("container");
+const close = document.getElementById("close");
+
+navButton.addEventListener("click", () => {
+  container.classList.add("active");
+});
+close.addEventListener("click", () => {
+  container.classList.remove("active");
+});

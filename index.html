@@ -8,675 +8,761 @@
     <script defer src="./script/app.js"></script>
   </head>
   <body>
-    <nav>
-      <img src="./img/logo.png" alt="" />
+    <div class="sidenav" id="side-nav">
+      <div class="nav-header">
+        <button id="close"><img src="./img/close-icon.svg" alt="" /></button>
+      </div>
       <ul>
-        <li><a href="#"> services</a></li>
-        <li><a href="#Benefits"> Benefits</a></li>
-        <li><a href="#packages"> Packegs</a></li>
-        <li><a href="#"> Resourses</a></li>
+        <li><a href="/#"> Home</a></li>
+        <li><a href="/#"> Collection</a></li>
+        <li><a href="/#"> Choose</a></li>
+        <li><a href="/#"> About</a></li>
+        <li><a href="/#"> Radmap</a></li>
+        <li><a href="/#"> Blog</a></li>
       </ul>
-      <a href="#" class="btn"> Book a free call</a>
-    </nav>
-    <section id="hero" class="hero">
-      <div class="content">
-        <div class="spots hidden">
-          <div class="circle"><div class="innter-circle"></div></div>
-          Spots available
-        </div>
-        <h1 class="h1 hidden delay-1">
-          Reliable Website to Help You <br /><span class="gradient">
-            Convert Visitors Into Clients
-          </span>
-        </h1>
-        <p class="paragraph hidden delay-2">
-          Transforming finance businesses into market leadres <br />through
-          expert branding and web design
-        </p>
-        <a href="#" class="btn"> let's work together </a>
-        <div class="stars">
-          <img src="./img/star.png" alt="" /><img
-            src="./img/star.png"
-            alt=""
-          /><img src="./img/star.png" alt="" /><img
-            src="./img/star.png"
-            alt=""
-          /><img src="./img/star.png" alt="" />
-        </div>
-        <p>Trusted by 10+ businesses</p>
-        <img src="./img/our-work.png" alt="our-work" class="our-work" />
-      </div>
-      <div class="wallpapers">
-        <img src="./img/hero-img-one.png" alt="" class="scale-up" />
-        <img src="./img/hero-img-two.png" alt="" class="scale-up" />
-      </div>
-      <div class="trusted-by">
-        <p>trusted by</p>
-        <div class="flex">
-          <img src="./img/agoraglobal.png" alt="" />
-          <img src="./img/arteo.png" alt="" />
-          <img src="./img/package-my-apps.png" alt="" />
-          <img src="./img/prospedge-solutions.png" alt="" />
-          <img src="./img/synrgy-athletics.png" alt="" />
-        </div>
-      </div>
-      <div class="wrapper" id="wrapper"><div class="g"></div></div>
-    </section>
-    <section class="services" id="Benefits">
-      <h1 class="h1 scale-up">We get you ...</h1>
-      <div class="features">
-        <div class="optimization hidden">
-          <div class="circle">
-            <img src="./img/optimization.png" alt="optimization" />
+      <ul class="social">
+        <li>
+          <a href="#">
+            <svg
+              width="29"
+              height="22"
+              viewBox="0 0 29 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.3633 2.42456C27.457 7.01831 29.0039 12.1746 28.4414 18.1277C28.4414 18.1277 28.4414 18.1746 28.3945 18.1746C26.332 19.7214 23.9883 20.8933 21.5039 21.6433C21.457 21.6433 21.4102 21.6433 21.4102 21.6433C20.8945 20.8933 20.4258 20.1433 20.0039 19.3464V19.2996C20.0039 19.2527 20.0039 19.2527 20.0508 19.2058C20.8008 18.9246 21.5039 18.5964 22.207 18.1746C22.2539 18.1746 22.2539 18.1746 22.2539 18.1277C22.2539 18.0808 22.2539 18.0808 22.207 18.0339C22.0664 17.9402 21.9258 17.8464 21.7852 17.7058H21.7383H21.6914C17.2383 19.7683 12.3633 19.7683 7.86328 17.7058C7.81641 17.7058 7.81641 17.7058 7.81641 17.7058C7.76953 17.7058 7.76953 17.7058 7.76953 17.7058C7.62891 17.8464 7.48828 17.9402 7.34766 18.0339C7.30078 18.0808 7.30078 18.0808 7.30078 18.1277C7.30078 18.1746 7.30078 18.1746 7.34766 18.1746C8.00391 18.5964 8.75391 18.9246 9.50391 19.2058C9.50391 19.2527 9.55078 19.2527 9.55078 19.2996V19.3464C9.12891 20.1433 8.66016 20.8933 8.14453 21.6433C8.09766 21.6433 8.09766 21.6433 8.05078 21.6433C5.51953 20.8933 3.17578 19.7214 1.16016 18.1746C1.11328 18.1746 1.11328 18.1277 1.11328 18.1277C0.644531 12.9714 1.62891 7.76831 5.19141 2.42456C5.19141 2.42456 5.19141 2.42456 5.23828 2.42456C6.97266 1.62769 8.89453 1.01831 10.8164 0.690186C10.8164 0.690186 10.8164 0.690186 10.8633 0.690186H10.9102C11.1914 1.15894 11.4258 1.67456 11.6133 2.14331C12.6445 2.00269 13.6758 1.90894 14.7539 1.90894C15.832 1.90894 16.9102 2.00269 17.9414 2.14331C18.1289 1.67456 18.3633 1.15894 18.6445 0.690186L18.6914 0.643311C18.6914 0.643311 18.6914 0.690186 18.7383 0.690186C20.6602 1.01831 22.582 1.62769 24.3164 2.42456C24.3633 2.42456 24.3633 2.42456 24.3633 2.42456ZM10.207 14.9871C11.5664 14.9871 12.6914 13.7214 12.6914 12.2214C12.6914 10.6746 11.6133 9.45581 10.207 9.45581C8.84766 9.45581 7.72266 10.6746 7.72266 12.2214C7.72266 13.7214 8.84766 14.9871 10.207 14.9871ZM19.3477 14.9871C20.7539 14.9871 21.832 13.7214 21.832 12.2214C21.8789 10.6746 20.7539 9.45581 19.3477 9.45581C17.9883 9.45581 16.9102 10.6746 16.9102 12.2214C16.9102 13.7214 17.9883 14.9871 19.3477 14.9871Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><svg
+              width="22"
+              height="27"
+              viewBox="0 0 22 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.3008 6.75269C14.2539 6.75269 16.6914 9.19019 16.6914 12.1433C16.6914 15.1433 14.2539 17.5339 11.3008 17.5339C8.30078 17.5339 5.91016 15.1433 5.91016 12.1433C5.91016 9.19019 8.30078 6.75269 11.3008 6.75269ZM11.3008 15.6589C13.2227 15.6589 14.7695 14.1121 14.7695 12.1433C14.7695 10.2214 13.2227 8.67456 11.3008 8.67456C9.33203 8.67456 7.78516 10.2214 7.78516 12.1433C7.78516 14.1121 9.37891 15.6589 11.3008 15.6589ZM18.1445 6.56519C18.1445 7.26831 17.582 7.83081 16.8789 7.83081C16.1758 7.83081 15.6133 7.26831 15.6133 6.56519C15.6133 5.86206 16.1758 5.29956 16.8789 5.29956C17.582 5.29956 18.1445 5.86206 18.1445 6.56519ZM21.707 7.83081C21.8008 9.56519 21.8008 14.7683 21.707 16.5027C21.6133 18.1902 21.2383 19.6433 20.0195 20.9089C18.8008 22.1277 17.3008 22.5027 15.6133 22.5964C13.8789 22.6902 8.67578 22.6902 6.94141 22.5964C5.25391 22.5027 3.80078 22.1277 2.53516 20.9089C1.31641 19.6433 0.941406 18.1902 0.847656 16.5027C0.753906 14.7683 0.753906 9.56519 0.847656 7.83081C0.941406 6.14331 1.31641 4.64331 2.53516 3.42456C3.80078 2.20581 5.25391 1.83081 6.94141 1.73706C8.67578 1.64331 13.8789 1.64331 15.6133 1.73706C17.3008 1.83081 18.8008 2.20581 20.0195 3.42456C21.2383 4.64331 21.6133 6.14331 21.707 7.83081ZM19.457 18.3308C20.0195 16.9714 19.8789 13.6902 19.8789 12.1433C19.8789 10.6433 20.0195 7.36206 19.457 5.95581C19.082 5.06519 18.3789 4.31519 17.4883 3.98706C16.082 3.42456 12.8008 3.56519 11.3008 3.56519C9.75391 3.56519 6.47266 3.42456 5.11328 3.98706C4.17578 4.36206 3.47266 5.06519 3.09766 5.95581C2.53516 7.36206 2.67578 10.6433 2.67578 12.1433C2.67578 13.6902 2.53516 16.9714 3.09766 18.3308C3.47266 19.2683 4.17578 19.9714 5.11328 20.3464C6.47266 20.9089 9.75391 20.7683 11.3008 20.7683C12.8008 20.7683 16.082 20.9089 17.4883 20.3464C18.3789 19.9714 19.1289 19.2683 19.457 18.3308Z"
+                fill="white"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              width="25"
+              height="27"
+              viewBox="0 0 25 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.4102 6.14331C23.7227 6.14331 24.8008 7.17456 24.8008 8.39331V20.3933C24.8008 21.6589 23.7227 22.6433 22.4102 22.6433H3.80078C2.11328 22.6433 0.800781 21.3308 0.800781 19.6433V4.64331C0.800781 3.00269 2.11328 1.64331 3.80078 1.64331H21.0508C22.2695 1.64331 23.3008 2.67456 23.3008 3.89331C23.3008 4.31519 22.9258 4.64331 22.5508 4.64331H4.55078C4.12891 4.64331 3.80078 5.01831 3.80078 5.39331C3.80078 5.81519 4.12891 6.14331 4.55078 6.14331H22.4102ZM20.3008 15.8933C21.0977 15.8933 21.8008 15.2371 21.8008 14.3933C21.8008 13.5964 21.0977 12.8933 20.3008 12.8933C19.457 12.8933 18.8008 13.5964 18.8008 14.3933C18.8008 15.2371 19.457 15.8933 20.3008 15.8933Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              width="25"
+              height="27"
+              viewBox="0 0 25 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.3164 7.26831C22.3164 7.50269 22.3164 7.69019 22.3164 7.92456C22.3164 14.4402 17.3945 21.8933 8.34766 21.8933C5.53516 21.8933 2.95703 21.0964 0.800781 19.6902C1.17578 19.7371 1.55078 19.7839 1.97266 19.7839C4.26953 19.7839 6.37891 18.9871 8.06641 17.6746C5.91016 17.6277 4.08203 16.2214 3.47266 14.2527C3.80078 14.2996 4.08203 14.3464 4.41016 14.3464C4.83203 14.3464 5.30078 14.2527 5.67578 14.1589C3.42578 13.6902 1.73828 11.7214 1.73828 9.33081V9.28394C2.39453 9.65894 3.19141 9.84644 3.98828 9.89331C2.62891 9.00269 1.78516 7.50269 1.78516 5.81519C1.78516 4.87769 2.01953 4.03394 2.44141 3.33081C4.87891 6.28394 8.53516 8.25269 12.6133 8.48706C12.5195 8.11206 12.4727 7.73706 12.4727 7.36206C12.4727 4.64331 14.6758 2.44019 17.3945 2.44019C18.8008 2.44019 20.0664 3.00269 21.0039 3.98706C22.082 3.75269 23.1602 3.33081 24.0977 2.76831C23.7227 3.94019 22.9727 4.87769 21.9414 5.48706C22.9258 5.39331 23.9102 5.11206 24.7539 4.73706C24.0977 5.72144 23.2539 6.56519 22.3164 7.26831Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="contaner" id="container">
+      <nav>
+        <img src="./img/logo.png" alt="" />
+        <ul>
+          <li><a href="#"> services</a></li>
+          <li><a href="#Benefits"> Benefits</a></li>
+          <li><a href="#packages"> Packegs</a></li>
+          <li><a href="#"> Resourses</a></li>
+        </ul>
+        <a href="#" class="btn"> Book a free call</a>
+        <button id="side-nav-button">
+          <img src="./img/nav-button.png" alt="" />
+        </button>
+      </nav>
+      <section id="hero" class="hero">
+        <div class="content">
+          <div class="spots hidden">
+            <div class="circle"><div class="innter-circle"></div></div>
+            Spots available
           </div>
-          <h1 class="mini-header">Your website lacks revenue optimization</h1>
-          <p class="paragraph">
-            is your website effectively converting vistors into leades ? if not,
-            you could be missing out on thousands of dollars, Let Encantion
-            design your websites for business growth and success.
-          </p>
-        </div>
-        <div class="difficult hidden">
-          <div class="circle">
-            <img src="./img/thumbs-down.png" alt="optimization" />
-          </div>
-          <h1 class="mini-header">
-            You find it difficult to stand out and build trust
+          <h1 class="h1 hidden delay-1">
+            Reliable Website to Help You <br /><span class="gradient">
+              Convert Visitors Into Clients
+            </span>
           </h1>
-          <p class="paragraph">
-            in a competitive market, visually standing out and establishing
-            trust is crucial. We create credible braning that effectively
-            communicates your expertise and sets you apart.
+          <p class="paragraph hidden delay-2">
+            Transforming finance businesses into market leadres <br />through
+            expert branding and web design
           </p>
-        </div>
-        <div class="efficient-designn hidden">
-          <div class="circle">
-            <img src="./img/sad-emoji.png" alt="optimization" />
+          <a href="#" class="btn"> let's work together </a>
+          <div class="stars">
+            <img src="./img/star.png" alt="" /><img
+              src="./img/star.png"
+              alt=""
+            /><img src="./img/star.png" alt="" /><img
+              src="./img/star.png"
+              alt=""
+            /><img src="./img/star.png" alt="" />
           </div>
-          <h1 class="mini-header">
-            Your are struggling with efficient design solutions
-          </h1>
-          <p class="paragraph">
-            As a busy finance business, let Encantio handle the design work for
-            you. We specialize in financial design, delivering efficient
-            solutions without the hassle of managing designers.
-          </p>
+          <p>Trusted by 10+ businesses</p>
+          <img src="./img/our-work.png" alt="our-work" class="our-work" />
         </div>
-      </div>
-      <p class="muted">our service</p>
-      <h1 class="header">Your one-stop solution</h1>
-      <div class="btns">
-        <a href="#" class="btn active"> Web Design </a>
-        <a href="#" class="btn"> branding</a>
-        <a href="#" class="btn"> Digital Design</a>
-      </div>
-
-      <img
-        src="./img/web-design-and-development.png"
-        alt=""
-        class="web-design scale-up"
-        loading="lazy"
-      />
-
-      <p class="muted">our Benefits</p>
-      <h1 class="header">Why choose us?</h1>
-      <div class="grid">
-        <div class="card hidden">
-          <div class="circle">
-            <img src="./img/financial-design-experties.png" alt="" />
-          </div>
-          <h1 class="mini-header">Financial Design Expertise</h1>
-          <p class="paragraph">
-            We have an understanding of financial concepts and we get your
-            design needs.
-          </p>
+        <div class="wallpapers">
+          <img src="./img/hero-img-one.png" alt="" class="scale-up" />
+          <img src="./img/hero-img-two.png" alt="" class="scale-up" />
         </div>
-        <div class="card hidden">
-          <div class="circle">
-            <img src="./img/no-hidden-costs.png" alt="" />
-          </div>
-          <h1 class="mini-header">No Hidden Costs</h1>
-          <p class="paragraph">
-            Transparent pricing! No hidden fees, just clear enchantment.
-          </p>
-        </div>
-        <div class="card hidden">
-          <div class="circle">
-            <img src="./img/fast-tunaround-times.png" alt="" />
-          </div>
-          <h1 class="mini-header">Fast Turnaround Times</h1>
-          <p class="paragraph">
-            Swift sorcery! Get your designs quickly and with updates every 48 or
-            72 hours.
-          </p>
-        </div>
-        <div class="card hidden">
-          <div class="circle">
-            <img src="./img/stars-outline.png" alt="" />
-          </div>
-          <h1 class="mini-header">Wizard-Level Quality</h1>
-          <p class="paragraph">
-            Crafted to perfection! Designs that captivate, build trust, and
-            convert.
-          </p>
-        </div>
-        <div class="card hidden">
-          <div class="circle">
-            <img src="./img/unique.png" alt="" />
-          </div>
-          <h1 class="mini-header">Unique and Yours Forever</h1>
-          <p class="paragraph">
-            Exclusive enchantments! Your designs are unique, and you retain full
-            ownership.
-          </p>
-        </div>
-        <div class="card hidden">
-          <div class="circle">
-            <img src="./img/all-in-one.png" alt="" />
-          </div>
-          <h1 class="mini-header">All-In-One Design Solution</h1>
-          <p class="paragraph">
-            We can offer a wide range of design solutions for your finance
-            business.
-          </p>
-        </div>
-      </div>
-      <div class="testimonials" id="Testimonials">
-        <h1 class="h1">What our clients have to say ?</h1>
-        <div class="flex">
-          <div class="scroller">
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “What sets Encantio apart is their commitment to excellence and
-                their ability to translate abstract ideas into visually
-                appealing and effective designs.”
-              </p>
-              <div class="user">
-                <img src="./img/jason.png" alt="" />
-                <div class="info">
-                  <p class="name">Jason</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “What sets Encantio apart is their commitment to excellence and
-                their ability to translate abstract ideas into visually
-                appealing and effective designs.”
-              </p>
-              <div class="user">
-                <img src="./img/jason.png" alt="" />
-                <div class="info">
-                  <p class="name">Jason</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “What sets Encantio apart is their commitment to excellence and
-                their ability to translate abstract ideas into visually
-                appealing and effective designs.”
-              </p>
-              <div class="user">
-                <img src="./img/jason.png" alt="" />
-                <div class="info">
-                  <p class="name">Jason</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “What sets Encantio apart is their commitment to excellence and
-                their ability to translate abstract ideas into visually
-                appealing and effective designs.”
-              </p>
-              <div class="user">
-                <img src="./img/jason.png" alt="" />
-                <div class="info">
-                  <p class="name">Jason</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “Working with Encantio is exceptional. The processes are highly
-                satisfactory, and the end results truly represent both me and my
-                company. Highly recommended!"
-              </p>
-              <div class="user">
-                <img src="./img/piero.png" alt="" />
-                <div class="info">
-                  <p class="name">Piero</p>
-                  <p class="muted">Founder & dirctor @ Arteo</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “What sets Encantio apart is their commitment to excellence and
-                their ability to translate abstract ideas into visually
-                appealing and effective designs.”
-              </p>
-              <div class="user">
-                <img src="./img/jason.png" alt="" />
-                <div class="info">
-                  <p class="name">Jason</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “Encantio was easy to work with and always went above and beyond
-                to make sure our team was always satisfied. The service helped
-                increase our online presence and grow our company.”
-              </p>
-              <div class="user">
-                <img src="./img/tomas.png" alt="" />
-                <div class="info">
-                  <p class="name">Tomas</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="stars">
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-                <img src="./img/star.png" alt="" />
-              </div>
-              <p class="message">
-                “What sets Encantio apart is their commitment to excellence and
-                their ability to translate abstract ideas into visually
-                appealing and effective designs.”
-              </p>
-              <div class="user">
-                <img src="./img/jason.png" alt="" />
-                <div class="info">
-                  <p class="name">Jason</p>
-                  <p class="muted">CED & Founder @packgeMyApps</p>
-                </div>
-              </div>
-            </div>
+        <div class="trusted-by">
+          <p>trusted by</p>
+          <div class="flex">
+            <img src="./img/agoraglobal.png" alt="" />
+            <img src="./img/arteo.png" alt="" />
+            <img src="./img/package-my-apps.png" alt="" />
+            <img src="./img/prospedge-solutions.png" alt="" />
+            <img src="./img/synrgy-athletics.png" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="packages" id="packages">
-      <!-- <div id="wrapper" class="wrapper"></div> -->
-      <p class="small">PACKAGES</p>
-      <h1 class="h1">Ready to invest in your company?</h1>
-      <div class="package-list">
-        <div class="package packge-1">
-          <div class="background">
-            <h1 class="mini-header">web Design Enchanted packege</h1>
+        <div class="wrapper" id="wrapper"><div class="g"></div></div>
+      </section>
+      <section class="services" id="Benefits">
+        <h1 class="h1 scale-up">We get you ...</h1>
+        <div class="features">
+          <div class="optimization hidden">
+            <div class="circle">
+              <img src="./img/optimization.png" alt="optimization" />
+            </div>
+            <h1 class="mini-header">Your website lacks revenue optimization</h1>
             <p class="paragraph">
-              Ideal for businesses in need of a reliable and high-converting
-              website.
+              is your website effectively converting vistors into leades ? if
+              not, you could be missing out on thousands of dollars, Let
+              Encantion design your websites for business growth and success.
             </p>
-            <button href="#" class="btn">Get started now</button>
-            <p class="blue-text">2 spots availablefor april</p>
-            <div class="line"></div>
-            <p>what is you goal</p>
-            <ul class="list">
-              <li>2-4 week delivery</li>
-              <li>update every 48/72</li>
-              <li>custom design</li>
-              <li>web development in webflow</li>
-              <li>coppywriting your website</li>
-            </ul>
-            <div class="line"></div>
-            <div>
-              <img src="./img/right-badge.png" alt="" /> 100% return grarantee
-            </div>
           </div>
-        </div>
-        <div class="package package-2">
-          <div class="background">
-            <h1 class="mini-header">Branding & Web Spell Package</h1>
+          <div class="difficult hidden">
+            <div class="circle">
+              <img src="./img/thumbs-down.png" alt="optimization" />
+            </div>
+            <h1 class="mini-header">
+              You find it difficult to stand out and build trust
+            </h1>
             <p class="paragraph">
-              Ideal for businesses seeking a complete branding and converting
-              web design.
+              in a competitive market, visually standing out and establishing
+              trust is crucial. We create credible braning that effectively
+              communicates your expertise and sets you apart.
             </p>
-            <button href="#" class="btn">Get started now</button>
-            <p class="blue-text">2 spots availablefor april</p>
-            <div class="line"></div>
-            <p>what is you goal</p>
-            <ul class="list">
-              <li>2-4 week delivery</li>
-              <li>update every 48/72</li>
-              <li>Logo design & brand guidelines</li>
-              <li>Custom web design</li>
-              <li>Web development in Webflow</li>
-              <li class="star">High-converting copywriting</li>
-            </ul>
-            <span class="limited"> For limited time only!</span>
-            <div class="line"></div>
-            <div>
-              <img src="./img/right-badge.png" alt="" /> 100% return grarantee
+          </div>
+          <div class="efficient-designn hidden">
+            <div class="circle">
+              <img src="./img/sad-emoji.png" alt="optimization" />
+            </div>
+            <h1 class="mini-header">
+              Your are struggling with efficient design solutions
+            </h1>
+            <p class="paragraph">
+              As a busy finance business, let Encantio handle the design work
+              for you. We specialize in financial design, delivering efficient
+              solutions without the hassle of managing designers.
+            </p>
+          </div>
+        </div>
+        <p class="muted">our service</p>
+        <h1 class="header">Your one-stop solution</h1>
+        <div class="btns">
+          <a href="#" class="btn active"> Web Design </a>
+          <a href="#" class="btn"> branding</a>
+          <a href="#" class="btn"> Digital Design</a>
+        </div>
+
+        <img
+          src="./img/web-design-and-development.png"
+          alt=""
+          class="web-design scale-up"
+          loading="lazy"
+        />
+
+        <p class="muted">our Benefits</p>
+        <h1 class="header">Why choose us?</h1>
+        <div class="grid">
+          <div class="card hidden">
+            <div class="circle">
+              <img src="./img/financial-design-experties.png" alt="" />
+            </div>
+            <h1 class="mini-header">Financial Design Expertise</h1>
+            <p class="paragraph">
+              We have an understanding of financial concepts and we get your
+              design needs.
+            </p>
+          </div>
+          <div class="card hidden">
+            <div class="circle">
+              <img src="./img/no-hidden-costs.png" alt="" />
+            </div>
+            <h1 class="mini-header">No Hidden Costs</h1>
+            <p class="paragraph">
+              Transparent pricing! No hidden fees, just clear enchantment.
+            </p>
+          </div>
+          <div class="card hidden">
+            <div class="circle">
+              <img src="./img/fast-tunaround-times.png" alt="" />
+            </div>
+            <h1 class="mini-header">Fast Turnaround Times</h1>
+            <p class="paragraph">
+              Swift sorcery! Get your designs quickly and with updates every 48
+              or 72 hours.
+            </p>
+          </div>
+          <div class="card hidden">
+            <div class="circle">
+              <img src="./img/stars-outline.png" alt="" />
+            </div>
+            <h1 class="mini-header">Wizard-Level Quality</h1>
+            <p class="paragraph">
+              Crafted to perfection! Designs that captivate, build trust, and
+              convert.
+            </p>
+          </div>
+          <div class="card hidden">
+            <div class="circle">
+              <img src="./img/unique.png" alt="" />
+            </div>
+            <h1 class="mini-header">Unique and Yours Forever</h1>
+            <p class="paragraph">
+              Exclusive enchantments! Your designs are unique, and you retain
+              full ownership.
+            </p>
+          </div>
+          <div class="card hidden">
+            <div class="circle">
+              <img src="./img/all-in-one.png" alt="" />
+            </div>
+            <h1 class="mini-header">All-In-One Design Solution</h1>
+            <p class="paragraph">
+              We can offer a wide range of design solutions for your finance
+              business.
+            </p>
+          </div>
+        </div>
+        <div class="testimonials" id="Testimonials">
+          <h1 class="h1">What our clients have to say ?</h1>
+          <div class="flex">
+            <div class="scroller">
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “What sets Encantio apart is their commitment to excellence
+                  and their ability to translate abstract ideas into visually
+                  appealing and effective designs.”
+                </p>
+                <div class="user">
+                  <img src="./img/jason.png" alt="" />
+                  <div class="info">
+                    <p class="name">Jason</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “What sets Encantio apart is their commitment to excellence
+                  and their ability to translate abstract ideas into visually
+                  appealing and effective designs.”
+                </p>
+                <div class="user">
+                  <img src="./img/jason.png" alt="" />
+                  <div class="info">
+                    <p class="name">Jason</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “What sets Encantio apart is their commitment to excellence
+                  and their ability to translate abstract ideas into visually
+                  appealing and effective designs.”
+                </p>
+                <div class="user">
+                  <img src="./img/jason.png" alt="" />
+                  <div class="info">
+                    <p class="name">Jason</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “What sets Encantio apart is their commitment to excellence
+                  and their ability to translate abstract ideas into visually
+                  appealing and effective designs.”
+                </p>
+                <div class="user">
+                  <img src="./img/jason.png" alt="" />
+                  <div class="info">
+                    <p class="name">Jason</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “Working with Encantio is exceptional. The processes are
+                  highly satisfactory, and the end results truly represent both
+                  me and my company. Highly recommended!"
+                </p>
+                <div class="user">
+                  <img src="./img/piero.png" alt="" />
+                  <div class="info">
+                    <p class="name">Piero</p>
+                    <p class="muted">Founder & dirctor @ Arteo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “What sets Encantio apart is their commitment to excellence
+                  and their ability to translate abstract ideas into visually
+                  appealing and effective designs.”
+                </p>
+                <div class="user">
+                  <img src="./img/jason.png" alt="" />
+                  <div class="info">
+                    <p class="name">Jason</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “Encantio was easy to work with and always went above and
+                  beyond to make sure our team was always satisfied. The service
+                  helped increase our online presence and grow our company.”
+                </p>
+                <div class="user">
+                  <img src="./img/tomas.png" alt="" />
+                  <div class="info">
+                    <p class="name">Tomas</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+                <p class="message">
+                  “What sets Encantio apart is their commitment to excellence
+                  and their ability to translate abstract ideas into visually
+                  appealing and effective designs.”
+                </p>
+                <div class="user">
+                  <img src="./img/jason.png" alt="" />
+                  <div class="info">
+                    <p class="name">Jason</p>
+                    <p class="muted">CED & Founder @packgeMyApps</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="package-3">
-          <div class="project">
-            <div class="gradiant-bg">
+      </section>
+      <section class="packages" id="packages">
+        <!-- <div id="wrapper" class="wrapper"></div> -->
+        <p class="small">PACKAGES</p>
+        <h1 class="h1">Ready to invest in your company?</h1>
+        <div class="package-list">
+          <div class="package packge-1">
+            <div class="background">
+              <h1 class="mini-header">web Design Enchanted packege</h1>
+              <p class="paragraph">
+                Ideal for businesses in need of a reliable and high-converting
+                website.
+              </p>
+              <button href="#" class="btn">Get started now</button>
+              <p class="blue-text">2 spots availablefor april</p>
+              <div class="line"></div>
+              <p>what is you goal</p>
+              <ul class="list">
+                <li>2-4 week delivery</li>
+                <li>update every 48/72</li>
+                <li>custom design</li>
+                <li>web development in webflow</li>
+                <li>coppywriting your website</li>
+              </ul>
+              <div class="line"></div>
+              <div>
+                <img src="./img/right-badge.png" alt="" /> 100% return grarantee
+              </div>
+            </div>
+          </div>
+          <div class="package package-2">
+            <div class="background">
               <h1 class="mini-header">Branding & Web Spell Package</h1>
               <p class="paragraph">
-                Ideal for businesses with digital design support seeking a fully
-                customized project.
+                Ideal for businesses seeking a complete branding and converting
+                web design.
               </p>
-              <div class="badgs">
-                <button>Digital ads</button>
-                <button>Digital reports</button>
-                <button>Infographics</button>
-                <button>Slide decks</button>
-                <button>Pitch decks</button>
-                <button>And more...</button>
-              </div>
+              <button href="#" class="btn">Get started now</button>
+              <p class="blue-text">2 spots availablefor april</p>
               <div class="line"></div>
-              <a href="#" class="btn"> Request for a quote</a>
-            </div>
-          </div>
-          <div class="add-on">
-            <div class="gradiant-bg">
-              <span> All Done for you Add-on</span>
-              <ul>
-                <li>Hosting cost covered for you</li>
-                <li>Free website update</li>
-                <li>Website maintenace</li>
-                <li>Domain intergration</li>
-                <li>hosting cost covered for you</li>
+              <p>what is you goal</p>
+              <ul class="list">
+                <li>2-4 week delivery</li>
+                <li>update every 48/72</li>
+                <li>Logo design & brand guidelines</li>
+                <li>Custom web design</li>
+                <li>Web development in Webflow</li>
+                <li class="star">High-converting copywriting</li>
               </ul>
+              <span class="limited"> For limited time only!</span>
+              <div class="line"></div>
+              <div>
+                <img src="./img/right-badge.png" alt="" /> 100% return grarantee
+              </div>
+            </div>
+          </div>
+          <div class="package-3">
+            <div class="project">
+              <div class="gradiant-bg">
+                <h1 class="mini-header">Branding & Web Spell Package</h1>
+                <p class="paragraph">
+                  Ideal for businesses with digital design support seeking a
+                  fully customized project.
+                </p>
+                <div class="badgs">
+                  <button>Digital ads</button>
+                  <button>Digital reports</button>
+                  <button>Infographics</button>
+                  <button>Slide decks</button>
+                  <button>Pitch decks</button>
+                  <button>And more...</button>
+                </div>
+                <div class="line"></div>
+                <a href="#" class="btn"> Request for a quote</a>
+              </div>
+            </div>
+            <div class="add-on">
+              <div class="gradiant-bg">
+                <span> All Done for you Add-on</span>
+                <ul>
+                  <li>Hosting cost covered for you</li>
+                  <li>Free website update</li>
+                  <li>Website maintenace</li>
+                  <li>Domain intergration</li>
+                  <li>hosting cost covered for you</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="Guarantee">
-        <div class="gradint-bg">
-          <img src="./img/right-badge-big.png" alt="" class="right-badge" />
-          <h1 class="h1">
-            Design Spell Guarantee -
-            <span class="gradiant-text"> No Risk On You</span>
-          </h1>
-          <p>
-            If our enchanted brand & web wizardry doesn't cast its spell on you
-            in 2 weeks, we'll conjure up a full refund.
-          </p>
-        </div>
-      </div>
-      <div class="stripe">
-        <img src="./img/s.png" alt="" />
-        <p>Payment securely done via Stripe</p>
-      </div>
-      <div class="secure">
-        <div class="gradiant-bg">
-          <h1 class="h1">
-            Your success is not just a goal,
-            <span class="gradiant-text">it’s our top priority</span>
-          </h1>
-          <p class="paragraph">
-            Your success is not just a goal, To ensure quality work, we work
-            with a limited amount of clients per month. Secure your spot for
-            dedicated attention and exceptional results.
-          </p>
-          <a href="#" class="btn">secure my sport</a>
-        </div>
-      </div>
-    </section>
-    <section class="vision">
-      <div class="bg">
-        <p class="small">HOW IT WORKS</p>
-        <h1 class="heading scale-up">Your vision, our design</h1>
-        <div class="cards">
-          <div class="card hidden">
-            <img src="./img/choose-your-package.png" alt="" />
-            <h1 class="mini">Choose your package</h1>
-            <p class="small">
-              Select the package that aligns perfectly with your brand's needs,
-              whether for web design or for digital design.
-            </p>
-          </div>
-          <div class="card hidden">
-            <img src="./img/request-your-design.png" alt="" />
-            <h1 class="mini">Request your design</h1>
-            <p class="small">
-              Let us bring your ideas to life with our expert design team, with
-              updates every 48 or 72 hours.
-            </p>
-          </div>
-          <div class="card hidden">
-            <img src="./img/request-your-design.png" alt="" />
-            <h1 class="mini">Revise and Launch</h1>
-            <p class="small">
-              100% satisfied, and then watch your We'll revise the design until
-              you are business grow.
+        <div class="Guarantee">
+          <div class="gradint-bg">
+            <img src="./img/right-badge-big.png" alt="" class="right-badge" />
+            <h1 class="h1">
+              Design Spell Guarantee -
+              <span class="gradiant-text"> No Risk On You</span>
+            </h1>
+            <p>
+              If our enchanted brand & web wizardry doesn't cast its spell on
+              you in 2 weeks, we'll conjure up a full refund.
             </p>
           </div>
         </div>
-
-        <h1 class="heading">Who do we best partner with?</h1>
-        <div class="badges">
-          <button class="badge">Financial services businesses</button>
-          <button class="badge">Financial advisement companies</button>
-          <button class="badge">Investment firms</button>
-          <button class="badge">Fintech startups</button>
-          <button class="badge">Financial education platforms</button>
-          <button class="badge">Venture capital firms</button>
-          <button class="badge">Personal finance bloggers</button>
-          <button class="badge">Financial influencers</button>
-          <button class="badge">Individual financial advisors</button>
-          <button class="badge">Financial consultants</button>
+        <div class="stripe">
+          <img src="./img/s.png" alt="" />
+          <p>Payment securely done via Stripe</p>
         </div>
-        <p class="small">FAQS</p>
-        <h1 class="heading">Unraveling the mysteries</h1>
-        <ul class="faqs">
-          <li>
-            <div class="question">
-              <button class="accordion">
-                <p>
-                  How does the design process work, and what is the typical
-                  timeline?
-                </p>
-                <img src="./img/arro-down.png" alt="" />
-              </button>
-
-              <div class="panel">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proident.
-                </p>
-                <p>
-                  Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat proident.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="question">
-              <button class="accordion">
-                <p>
-                  Do you offer revisions, and how many are included in the
-                  package?
-                </p>
-                <img src="./img/arro-down.png" alt="" />
-              </button>
-
-              <div class="panel">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proident.
-                </p>
-                <p>
-                  Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat proident.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="question">
-              <button class="accordion">
-                <p>
-                  Is ongoing support included after the design work is complete?
-                </p>
-                <img src="./img/arro-down.png" alt="" />
-              </button>
-
-              <div class="panel">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proident.
-                </p>
-                <p>
-                  Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat proident.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="question">
-              <button class="accordion">
-                <p>
-                  What makes your design services unique for the financial
-                  industry?
-                </p>
-                <img src="./img/arro-down.png" alt="" />
-              </button>
-
-              <div class="panel">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proident.
-                </p>
-                <p>
-                  Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat proident.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="question">
-              <button class="accordion">
-                <p>What guarantees do you provide for your design services?</p>
-                <img src="./img/arro-down.png" alt="" />
-              </button>
-
-              <div class="panel">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proident.
-                </p>
-                <p>
-                  Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat proident.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="book-a-call scale-up">
-          <h1 class="heading">
-            One Click away from buliding a
-            <span class="gradiant-text"> market-leading brand</span>
-          </h1>
-          <a href="#" class="btn"> book a call now </a>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="content">
-        <div class="flex">
-          <div class="left">
-            <img src="./img/logo-big.png" alt="" />
-            <p class="muted">
-              Encantio is headquarted in Buenos Aires, Argentina.
+        <div class="secure">
+          <div class="gradiant-bg">
+            <h1 class="h1">
+              Your success is not just a goal,
+              <span class="gradiant-text">it’s our top priority</span>
+            </h1>
+            <p class="paragraph">
+              Your success is not just a goal, To ensure quality work, we work
+              with a limited amount of clients per month. Secure your spot for
+              dedicated attention and exceptional results.
             </p>
-            <span>
-              <img src="./img/right-badge.png" alt="" /> 100% satisfaction
-              guaranteed, if not your money back.
-            </span>
-          </div>
-          <div class="right">
-            <a href="#"> Resources</a>
-            <a href="#"> Recent work</a>
-            <a href="#"> Services</a>
-            <a href="#"> Testimonials</a>
-            <a href="#"> Benefits</a>
-            <a href="#"> Packages</a>
-            <a href="#"> About</a>
-            <a href="#"> FAQ</a>
+            <a href="#" class="btn">secure my sport</a>
           </div>
         </div>
-        <div class="bottom">
-          <p>&copy;2024 Encantio. All rights reserved.</p>
-          <div class="links">
-            <a href="#"> Privacy Policy</a> <a href="#">Terms & Conditions</a>
+      </section>
+      <section class="vision">
+        <div class="bg">
+          <p class="small">HOW IT WORKS</p>
+          <h1 class="heading scale-up">Your vision, our design</h1>
+          <div class="cards">
+            <div class="card hidden">
+              <img src="./img/choose-your-package.png" alt="" />
+              <h1 class="mini">Choose your package</h1>
+              <p class="small">
+                Select the package that aligns perfectly with your brand's
+                needs, whether for web design or for digital design.
+              </p>
+            </div>
+            <div class="card hidden">
+              <img src="./img/request-your-design.png" alt="" />
+              <h1 class="mini">Request your design</h1>
+              <p class="small">
+                Let us bring your ideas to life with our expert design team,
+                with updates every 48 or 72 hours.
+              </p>
+            </div>
+            <div class="card hidden">
+              <img src="./img/request-your-design.png" alt="" />
+              <h1 class="mini">Revise and Launch</h1>
+              <p class="small">
+                100% satisfied, and then watch your We'll revise the design
+                until you are business grow.
+              </p>
+            </div>
+          </div>
+
+          <h1 class="heading">Who do we best partner with?</h1>
+          <div class="badges">
+            <button class="badge">Financial services businesses</button>
+            <button class="badge">Financial advisement companies</button>
+            <button class="badge">Investment firms</button>
+            <button class="badge">Fintech startups</button>
+            <button class="badge">Financial education platforms</button>
+            <button class="badge">Venture capital firms</button>
+            <button class="badge">Personal finance bloggers</button>
+            <button class="badge">Financial influencers</button>
+            <button class="badge">Individual financial advisors</button>
+            <button class="badge">Financial consultants</button>
+          </div>
+          <p class="small">FAQS</p>
+          <h1 class="heading">Unraveling the mysteries</h1>
+          <ul class="faqs">
+            <li>
+              <div class="question">
+                <button class="accordion">
+                  <p>
+                    How does the design process work, and what is the typical
+                    timeline?
+                  </p>
+                  <img src="./img/arro-down.png" alt="" />
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat proident.
+                  </p>
+                  <p>
+                    Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat proident.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="question">
+                <button class="accordion">
+                  <p>
+                    Do you offer revisions, and how many are included in the
+                    package?
+                  </p>
+                  <img src="./img/arro-down.png" alt="" />
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat proident.
+                  </p>
+                  <p>
+                    Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat proident.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="question">
+                <button class="accordion">
+                  <p>
+                    Is ongoing support included after the design work is
+                    complete?
+                  </p>
+                  <img src="./img/arro-down.png" alt="" />
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat proident.
+                  </p>
+                  <p>
+                    Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat proident.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="question">
+                <button class="accordion">
+                  <p>
+                    What makes your design services unique for the financial
+                    industry?
+                  </p>
+                  <img src="./img/arro-down.png" alt="" />
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat proident.
+                  </p>
+                  <p>
+                    Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat proident.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="question">
+                <button class="accordion">
+                  <p>
+                    What guarantees do you provide for your design services?
+                  </p>
+                  <img src="./img/arro-down.png" alt="" />
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat proident.
+                  </p>
+                  <p>
+                    Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat proident.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="book-a-call scale-up">
+            <h1 class="heading">
+              One Click away from buliding a
+              <span class="gradiant-text"> market-leading brand</span>
+            </h1>
+            <a href="#" class="btn"> book a call now </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <footer class="footer">
+        <div class="content">
+          <div class="flex">
+            <div class="left">
+              <img src="./img/logo-big.png" alt="" />
+              <p class="muted">
+                Encantio is headquarted in Buenos Aires, Argentina.
+              </p>
+              <span>
+                <img src="./img/right-badge.png" alt="" /> 100% satisfaction
+                guaranteed, if not your money back.
+              </span>
+            </div>
+            <div class="right">
+              <a href="#"> Resources</a>
+              <a href="#"> Recent work</a>
+              <a href="#"> Services</a>
+              <a href="#"> Testimonials</a>
+              <a href="#"> Benefits</a>
+              <a href="#"> Packages</a>
+              <a href="#"> About</a>
+              <a href="#"> FAQ</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>&copy;2024 Encantio. All rights reserved.</p>
+            <div class="links">
+              <a href="#"> Privacy Policy</a> <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
