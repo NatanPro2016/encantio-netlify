@@ -39,17 +39,18 @@ body {
   transition: transform ease-in-out 0.5s;
 }
 .contaner.active {
-  transform: translateX(-350px);
+  transform: translateX(-250px);
 }
 .sidenav {
   position: fixed;
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 350px;
+  max-width: 250px;
   position: fixed;
   background: var(--background);
   padding: 20px;
+  padding-top: 0;
 }
 .sidenav.active {
   transform: scaleY(0);
@@ -66,9 +67,11 @@ body {
   border: none;
   background-color: var(--background);
   color: var(--forground);
+  padding: 1rem;
+  padding-left: 0;
 }
 .sidenav button img {
-  width: 20px;
+  width: 1.8rem;
 }
 .sidenav ul {
   display: flex;
@@ -115,7 +118,7 @@ nav {
   position: fixed;
   margin: 2rem;
   border: 1px solid #ffffff2c;
-  padding: 0.3rem 2rem 0.3rem 2rem;
+  padding: 0.3rem 0.3rem 0.3rem 2rem;
   border-radius: 1.2rem;
   background: var(--dark-background);
   z-index: 1000;
@@ -135,10 +138,11 @@ nav button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 1rem;
 }
 
 nav button img {
-  width: 20px;
+  width: 1.8rem;
 }
 nav .btn {
   padding: 1rem;
@@ -1067,7 +1071,7 @@ nav .btn {
         font-size: 13.2px;
       }
     }
-    .botton {
+    .bottom {
       display: flex;
       justify-content: space-between;
       color: #b5b5ba;
@@ -1096,6 +1100,7 @@ nav .btn {
     border: none;
     border-radius: unset;
     margin: 0;
+    padding: 0.3rem 2rem;
   }
   nav ul,
   nav .btn {
@@ -1199,8 +1204,34 @@ nav .btn {
     flex-direction: column;
     .content {
       flex-direction: column;
+
       .flex {
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+
+        .left {
+          align-items: center;
+          max-width: 50rem;
+        }
+        .left span {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+        .right {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 2rem;
+        }
+      }
+
+      .bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
       }
     }
   }
