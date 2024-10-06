@@ -26,6 +26,88 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+.loading-page {
+  height: 100vh;
+  z-index: 100;
+  background: #ff232311;
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  --uib-size: 40px;
+  --uib-color: black;
+  --uib-speed: 0.9s;
+  position: relative;
+  height: calc(var(--uib-size) / 2);
+  width: var(--uib-size);
+  filter: url("#uib-jelly-ooze");
+  animation: rotate calc(var(--uib-speed) * 2) linear infinite;
+  will-change: transform;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  background-color: var(--uib-color);
+  border-radius: 100%;
+  will-change: transform;
+  transition: background-color 0.3s ease;
+}
+
+.container::before {
+  animation: shift-left var(--uib-speed) ease infinite;
+}
+
+.container::after {
+  animation: shift-right var(--uib-speed) ease infinite;
+}
+
+.svg {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+@keyframes rotate {
+  0%,
+  49.999%,
+  100% {
+    transform: none;
+  }
+
+  50%,
+  99.999% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes shift-left {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(-75%);
+  }
+}
+
+@keyframes shift-right {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(75%);
+  }
+}
 
 .contaner {
   width: 100%;
@@ -121,7 +203,7 @@ nav {
   padding: 0.3rem 0.3rem 0.3rem 2rem;
   border-radius: 1.2rem;
   background: var(--dark-background);
-  z-index: 1000;
+  z-index: 10;
 }
 ul {
   display: flex;
