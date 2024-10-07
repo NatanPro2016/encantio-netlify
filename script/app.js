@@ -1,4 +1,11 @@
+const loadingPage = document.querySelector(".loading-page")
+window.addEventListener("load", ()=>{
+  loadingPage.classList.add("hidden")
+})
+
 const wrappers = document.querySelectorAll("#wrapper");
+
+
 wrappers.forEach((wrapper) => {
   for (let i = 2190; i >= 0; i--) {
     const row = document.createElement("div");

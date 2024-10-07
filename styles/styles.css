@@ -28,13 +28,16 @@ body {
 }
 .loading-page {
   height: 100vh;
-  z-index: 100;
-  background: #ff232311;
-
+  z-index: 900;
+  background: #ffffff;
+  position: fixed;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.loading-page.hidden {
+  display: none;
 }
 .loader {
   --uib-size: 40px;
@@ -48,8 +51,8 @@ body {
   will-change: transform;
 }
 
-.container::before,
-.container::after {
+.loader::before,
+.loader::after {
   content: "";
   position: absolute;
   top: 0%;
@@ -62,11 +65,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.container::before {
+.loader::before {
   animation: shift-left var(--uib-speed) ease infinite;
 }
 
-.container::after {
+.loader::after {
   animation: shift-right var(--uib-speed) ease infinite;
 }
 
